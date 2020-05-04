@@ -118,7 +118,7 @@
                   <label>Jumlah Donasi</label>
                   <input type="text" class="form-control" placeholder="Masukkan Jumlah Donasi" name="donasi" ng-model="found.donasi" ng-minlength="4" ng-maxlength="100" required>
                   <p ng-show="foundForm.donasi.$error.minlength" class="help-block">Minimal Donasi 1000.</p>
-				  <p ng-show="foundForm.donasi.$error.maxlength" class="help-block">Maximum Donate ThankYou!.</p>
+				          <p ng-show="foundForm.donasi.$error.maxlength" class="help-block">Maximum Donate ThankYou!.</p>
                 </div>                
               </div>
 
@@ -127,7 +127,7 @@
                   <label><a href="jointteam.html"> Masuk Acount</a> atau Lengkapi data Dibawah ini</label>
                   <input type="text" class="form-control" placeholder="Nama Lengkap" name="donatur" ng-model="found.donatur" ng-minlength="4" ng-maxlength="100" required>
                   <p ng-show="foundForm.donatur.$error.minlength" class="help-block"> Name is too short.</p>
-				  <p ng-show="foundForm.donatur.$error.maxlength" class="help-block"> Name is too long.</p>
+				          <p ng-show="foundForm.donatur.$error.maxlength" class="help-block"> Name is too long.</p>
                 </div>
               </div>
 
@@ -135,7 +135,7 @@
                 <div class="col-md-12" ng-class="{ 'has-error' : foundForm.donaturhp.$invalid && !foundForm.donaturhp.$pristine }">
                   <input type="text" class="form-control" placeholder="Nomor Ponsel" name="donaturhp" ng-model="found.donaturhp" ng-minlength="11" ng-maxlength="12" required>
                   <p ng-show="foundForm.donaturhp$error.minlength" class="help-block">Number Phone is too short.</p>
-				  <p ng-show="foundForm.donaturhp.$error.maxlength" class="help-block">Number Phone is too long.</p>
+				          <p ng-show="foundForm.donaturhp.$error.maxlength" class="help-block">Number Phone is too long.</p>
                 </div>
               </div>
 
@@ -235,7 +235,7 @@
                 <div class="input-group mb-3">
                   <input type="text" class="form-control rounded-0 border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
                   <div class="input-group-append">
-                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2" onclick="window.alert('Terimakasih Telah Menambahkan Kami');">Subscribe</button>
                   </div>
                 </div>
             </div>

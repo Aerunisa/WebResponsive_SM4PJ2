@@ -5,12 +5,8 @@
   <title>Donate.Id</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
     <link href="https://fonts.googleapis.com/css?family=Mansalva|Roboto&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -18,15 +14,12 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
-
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
 
   </head>
 
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-    
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" ng-app="validationApp" ng-controller="mainController">    
     <div class="site-wrap" id="home-section">
 
       <div class="site-mobile-menu site-navbar-target">
@@ -38,10 +31,6 @@
         <div class="site-mobile-menu-body"></div>
       </div>
 
-
-      
-      
-      
       <div class="bg-primary py-3 top-bar shadow d-none d-md-block">
         <div class="container">
           <div class="row">
@@ -57,16 +46,13 @@
           </div>
         </div>
       </div>
+
       <header class="site-navbar site-navbar-target bg-secondary shadow" role="banner">
-
         <div class="container">
-          <div class="row align-items-center position-relative">
-            
-
+          <div class="row align-items-center position-relative">        
             <div class="site-logo">
               <a href="Home.html" class="text-white">Donate.Id</a>
             </div>
-
 
             <nav class="site-navigation text-left ml-auto " role="navigation">
               <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
@@ -79,58 +65,44 @@
               </ul>
             </nav>
 
-
-            <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-white"><span class="icon-menu h3 text-white"></span></a></div>
-
-            
-
+            <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-white"><span class="icon-menu h3 text-white"></span></a></div>        
           </div>
         </div>
-
       </header>
 
-
-
-
     <div class="owl-carousel-wrapper">
-
-      
-
       <div class="box-92819">
         <h1 class="text-white mb-3">Contact</h1>
         <p class="lead text-white">Contact Us for Help! You Help They Touched with Grateful</p>
       </div>
-
-      
-        <div class="ftco-cover-1 overlay" style="background-image: url('images/contac.png');"></div>
-      
+        <div class="ftco-cover-1 overlay" style="background-image: url('images/contac.png');"></div>      
     </div>
-    
-    
+      
     <div class="site-section">
-      <div class="container">
-        
+      <div class="container">        
+     
         <div class="row">
           <div class="col-lg-8 mb-5" >
-            <form action="#" method="post">
+            <form name="MessageForm" ng-submit="submitForm(MessageForm.$valid)" novalidate>
               <div class="form-group row">
-                <div class="col-md-6 mb-4 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First name">
+                <div class="col-md-6 mb-4 mb-lg-0" ng-class="{ 'has-error' : MessageForm.Yname.$invalid && !MessageForm.Yname.$pristine }">
+                  <label>Your Name</label>
+                  <input type="text" class="form-control" placeholder="Your name" name="Yname" ng-model="Message.Yname" required>
+                  <p ng-show="MessageForm.Yname.$invalid && !MessageForm.Yname.$pristine" class="help-block">Your name is required.</p>                  
+                </div>                
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12" ng-class="{ 'has-error' : MessageForm.Email.$invalid && !MessageForm.Email.$pristine }">
+                  <label>Email</label>
+                  <input type="text" class="form-control" placeholder="Email address" name="Email" ng-model="Message.Email" required>
+                  <p ng-show="MessageForm.Email.$invalid && !MessageForm.Email.$pristine" class="help-block">Your Email is required.</p>                  
                 </div>
               </div>
-
               <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Email address">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
+                <div class="col-md-12" ng-class="{ 'has-error' : MessageForm.mess.$invalid && !MessageForm.mess.$pristine }">
+                  <label>Your Message</label>
+                  <textarea name="mess" ng-model="Message.mess" required class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
+                  <p ng-show="MessageForm.mess.$invalid && !MessageForm.mess.$pristine" class="help-block">Your Message isnt Complete.</p>                  
                 </div>
               </div>
               <div class="form-group row">
@@ -160,21 +132,15 @@
               <div id="map" style="width: 140%;height: 250px;"></div>
           </div>
       </div>
-
       </div>
     </div>
 
-    
-
-
     <div class="site-section">
-      <div class="container">
-        
-            <div class="d-md-flex cta-20101 align-self-center bg-light p-5">
-              <div class=""><h2 class="text-cursive">Helping the Homeless, Hungry, and Hurtings People</h2></div>
-              <div class="ml-auto"><a href="causes.html" class="btn btn-primary">Donate Now</a></div>
-            </div>
-        
+      <div class="container">        
+        <div class="d-md-flex cta-20101 align-self-center bg-light p-5">
+          <div class=""><h2 class="text-cursive">Helping the Homeless, Hungry, and Hurtings People</h2></div>
+          <div class="ml-auto"><a href="causes.html" class="btn btn-primary">Donate Now</a></div>
+        </div>        
       </div>
     </div>
     
@@ -192,32 +158,29 @@
               <div class="col-md-4 ml-auto">
                 <h2 class="footer-heading mb-4">Features</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
+                  <li><a href="about.html">About Us</a></li>
                   <li><a href="#">Testimonials</a></li>
                   <li><a href="#">Terms of Service</a></li>
                   <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
-
             </div>
           </div>
-          <div class="col-md-4 ml-auto">
-
+          <div class="col-md-4 ml-auto" id="">
             <div class="mb-5">
               <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
               <form action="#" method="post" class="footer-suscribe-form">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control rounded-0 border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
                   <div class="input-group-append">
-                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2" onclick="window.alert('Terimakasih Telah Menambahkan Kami');">Subscribe</button>
                   </div>
                 </div>
             </div>
 
-
             <h2 class="footer-heading mb-4">Follow Us</h2>
-            <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+            <a href="#" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
             <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
             <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
             <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
@@ -253,6 +216,7 @@
     <script src="js/aos.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/AngularForm.js"></script>
 
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
@@ -281,6 +245,23 @@
         map.on('click', onMapClick);
     </script>
 
+    <script>
+      var validationApp = angular.module('validationApp', []);
+      // create angular controller
+      validationApp.controller('mainController', function ($scope) {
+        // function to submit the form after all validation has occurred
+        $scope.submitForm = function (isValid) {
+          // check to make sure the form is completely valid
+          if (isValid) {
+            alert('Terimakasih Atas Pesan Anda, Akan Kami Jawab 24x1 hari kerja.');
+          }
+                  else{
+                  alert('Tolong Lengkapi Semua field')
+              }
+        };
+      });
+    </script>
+    
   </body>
 
 </html>
