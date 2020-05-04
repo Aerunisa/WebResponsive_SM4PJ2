@@ -1,0 +1,74 @@
+[
+    {
+        "alamat"    : "isiBlog.html",    
+        "img"       : "medCorona.jpeg", 
+        "tanggal"   : "22",
+        "bultah"    : "March 2020",
+        "alamat2"   : "#",
+        "person"    : "Aerunisa",
+        "kalimat"   : "Siapa Yang Melindungi Pahlawan Kita?"    
+    },
+    {
+        "alamat"    : "isiBlog.html",    
+        "img"       : "terdampakcorona.jpeg", 
+        "tanggal"   : "26",
+        "bultah"    : "March 2020",
+        "alamat2"   : "#",
+        "person"    : "Sovia",
+        "kalimat"   : "Semua Terdampak Tetapi Apakah Kalian masih Hanya akan Diam ?"    
+    },
+    {
+        "alamat"    : "isiBlog2.html",    
+        "img"       : "jembatan.jpg", 
+        "tanggal"   : "22",
+        "bultah"    : "Dec 2019",
+        "alamat2"   : "#",
+        "person"    : "Aerunisa",
+        "kalimat"   : "Tetap Semangat dikala Nyawa Diambang"    
+    },
+    {
+        "alamat"    : "isiBlog2.html",    
+        "img"       : "kebakaran.jpeg", 
+        "tanggal"   : "22",
+        "bultah"    : "Nov 2019",
+        "alamat2"   : "#",
+        "person"    : "Sovia",
+        "kalimat"   : "Paru - Paru Dunia Perlu Disembuhkan!"    
+    },
+    {
+        "alamat"    : "isiBlog2.html",    
+        "img"       : "lautanplastik.jpg", 
+        "tanggal"   : "19 ",
+        "bultah"    : "Oct 2019",
+        "alamat2"   : "#",
+        "person"    : "Maharani",
+        "kalimat"   : "Jutaan Hewan Penyeimbang Alam Mulai Tumbang!"    
+    },
+    {
+        "alamat"    : "isiBlog2.html",    
+        "img"       : "palestine.jpg", 
+        "tanggal"   : "19 ",
+        "bultah"    : "July 2019",
+        "alamat2"   : "#",
+        "person"    : "Sovia",
+        "kalimat"   : "Jangan Lupakan Mereka!"    
+    },
+    {
+        "alamat"    : "isiBlog2.html",    
+        "img"       : "angkot.jpg", 
+        "tanggal"   : "24",
+        "bultah"    : "Nov 2019",
+        "alamat2"   : "#",
+        "person"    : "Aerunisa",
+        "kalimat"   : "Mulai Tergantikan Bantu Mereka Bangkit"    
+    },
+    {
+        "alamat"    : "isiBlog2.html",    
+        "img"       : "miskin.jpeg", 
+        "tanggal"   : "1",
+        "bultah"    : "Jan 2020",
+        "alamat2"   : "#",
+        "person"    : "Aerunisa",
+        "kalimat"   : "Berikan Kehidupan Layak!"    
+    }
+]

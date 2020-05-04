@@ -1,0 +1,38 @@
+[
+{
+    "profile"   : "Aeru.jpeg",
+    "nama"      : "Aerunisa",
+    "datetime"  : "March 29, 2020 at 2:21 pm",
+    "lineA"     : "Pencairan Dana Ke Rekening * * * * A/N PT APD",
+    "lineB"     : "Penggunaan Dana: Pembelian APD untuk Wilayah DKI JAKARTA"
+},
+{
+    "profile"   : "Aeru.jpeg",
+    "nama"      : "Aerunisa",
+    "datetime"  : "April 12, 2020 at 13:00pm",
+    "lineA"     : "Pencairan Dana Ke Rekening * * * * A/N PT APD",
+    "lineB"     : "Penggunaan Dana: Pembelian APD untuk Wilayah Banten dan Tanggerang"
+},
+{
+    "profile"   : "thalia.jpeg",
+    "nama"      : "Maharani",
+    "datetime"  : "April 24, 2020 at 2:21 pm",
+    "lineA"     : "Pencairan Dana Ke Rekening * * * * A/N PT Masker Sensi",
+    "lineB"     : "Penggunaan Dana: Pembelian APD untuk Wilayah Bandung"
+},
+{
+    "profile"   : "Aeru.jpeg",
+    "nama"      : "Aerunisa",
+    "datetime"  : "April 29, 2020 at 2:21 pm",
+    "lineA"     : "Pencairan Dana Ke Rekening * * * * A/N TPU PONDOK",
+    "lineB"     : "Penggunaan Dana: Pembelian APD untuk TPU Pondok Ranggon"
+},
+{
+    "profile"   : "Aeru.jpeg",
+    "nama"      : "Aerunisa",
+    "datetime"  : "March 29, 2020 at 2:21 pm",
+    "lineA"     : "Pencairan Dana Ke Rekening * * * * A/N PT Manunggal",
+    "lineB"     : "Penggunaan Dana: Pembelian APD untuk Wilayah Jawa Tengah"
+}
+
+]
