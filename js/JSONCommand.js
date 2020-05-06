@@ -21,7 +21,7 @@ $.getJSON("data/donation.json", function(data){
                 '<div class="ml-auto"><strong class="text-primary">'+val.jumlah+'</strong></div>'+
                 '</div>'+
                 '<div class="border-top border-light border-bottom py-2 d-flex">'+
-                '<button type="button" href="'+val.donasi+'"  class="btn btn-block btn-primary text-white py-3 px-5 rounded-0"  >'+
+                '<button type="button" onClick="window.open(donasi.html)"  class="btn btn-block btn-primary text-white py-3 px-5 rounded-0"  >'+
                     '<a href="'+val.donasi+'" class="text-white">Donasi Sekarang</a></button>'+
                 '</div>'+
                 '<div class="py-4">'+
